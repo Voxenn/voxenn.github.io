@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vernon Williams</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <section id="home" class="home">
+        <nav class="nav-wrapper">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </section>
+      <section id="intro" class="intro box">
+        <img class="portrait" alt="Vernon Williams - photo" src="assets/img/me.jpg"/>
+        <header> "Let's create something together." - Vernon Williams, Software Developer</header>
+      </section>
+      <section id="about" class="about">
+        I am a Software Developer with a passion for learning code and creating applications. You can find me in the gym or outside working out if I'm not in front of the computer.
+        I currently enjoy learning:
+        <ul>
+          <li>- Java</li>
+          <li>- JavaScript</li>
+          <li>- ReactJs</li>
+          <li>- NodeJs</li>
+          <li>- HTML</li>
+          <li>- CSS</li>
+        </ul>
+      </section>
+      <section id="portfolio" class="portfolio grid-container">
+          <div class="portfolio-item">
+            <img class="img-fluid rounded" src="assets/img/FFVIII.jpg" alt="FFVIII">
+            <a href="https://voxenn.github.io/FF-Trivia/" class="portButton" target="_blank"><span> FFVIII Trivia </span></a>
+            <h4>A Final Fantasy VIII Trivia Game!</h4>
+          </div>
+          <div class="portfolio-item">
+            <img class="img-fluid rounded" src="assets/img/cb.jpg" alt="Cowboy Bebop">
+            <a href="https://voxenn.github.io/Hangman/" class="portButton" target="_blank"><span> Bebop Hangman </span></a>
+            <h4>Hangman: Cowboy Bebop Style</h4>
+          </div>
+          <div class="portfolio-item">
+            <img class="img-fluid rounded" src="assets/img/arch.jpeg" alt="WhatsForDinner">
+            <a href="https://voxenn.github.io/WhatsForDinner/" class="portButton" target="_blank"><span> What's For Dinner </span></a>
+            <h4>Single Page Application that let's you find recipes or restaurants!</h4>
+          </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <form action="action_page.php" method="POST">
+          <label for="fullname">Name</label>
+          <input type="text" id="fullname" name="name" placeholder="Name">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Email">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Leave a message!" style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+        <footer> Vernon Williams &copy; 2019 || &nbsp;
+          <button>
+            <a href="http://www.github.com/voxenn" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </button>
+          <button>
+            <a href="http://www.linkedin.com/in/vernonvwill" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </button>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="assets/js/effects.js"></script>
+  </body>
+</html>

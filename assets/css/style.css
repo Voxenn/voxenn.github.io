@@ -1,0 +1,178 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+h4 {
+  font-size: 3em;
+  color: slategray;
+}
+
+header {
+  font-size: 5em;
+  color: slategray;
+}
+
+footer {
+  background-color: #1f2630;
+  border-top:4px solid #4aaaa5;
+  bottom: 0;
+  color: slategray;
+  font-size: 3em;
+  line-height: 30px;
+  text-align: center;
+}
+
+nav {
+  background-color: #1f2630;
+  display: inline-block;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+nav > a {
+  color: #e1e8f4;
+  font-size: 2em;
+  padding: 30px;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition:    color 0.5s;
+  -ms-transition:     color 0.5s;
+  -o-transition:      color 0.5s;
+  transition:         color 0.5s;
+}
+
+nav > a:hover {
+  color: #22658e;
+}
+
+a .fa {
+  color: black;
+}
+
+.about {
+  font-size: 3em;
+  color: slategray;
+  padding: 10%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.portButton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0F3C73;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.portButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.portButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.portButton:hover span {
+  padding-right: 25px;
+}
+
+.portButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.portfolio-item {
+  grid-column: span 4;
+  padding: 10px;
+}
+.portrait {
+  border-radius: 50%;
+  max-height: 300px;
+  width: 15%;
+  margin-left: 35%;
+  margin-top:5%;
+}
+
+.rounded {
+  border-radius: .25rem !important;
+}
+.intro, .portfolio {
+  background-color: floralwhite;
+}
+
+.intro, .portfolio, .contact{
+  height: 1000px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+form {
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
